@@ -1,0 +1,78 @@
+@charset "utf-8";
+body{
+	
+	}
+
+header{
+	position:absolute;
+	top:0%; left:0%; height:160px; width:100%;
+	//background-color:#CCC;
+	}
+	
+#menu_bar{
+	position:absolute;
+	bottom:0px; left:11.5%; width:77.1%; height:20%;
+	border-radius:0px 0px 15px 15px;
+	background-color:#E2D7BC;
+	}
+	
+section{
+	
+	}
+	
+#left{
+	position:absolute;
+	left:11.5%; top:165px; width:47%; height:67%;
+	border-radius:15px 15px 0px 0px;
+	background:#CCE;
+	}
+	
+#animate-images{
+	position:absolute;
+	left:10%; bottom:15%;
+	border-radius:20px;
+	border:double;
+	}
+	
+.info{
+	position:absolute;
+	left:10%; top:10px; width:75%; height:25%; 
+	background-color:#E2D7BC;
+	}
+	
+#info{
+	position:absolute;
+	left:30px; top:15px;	
+	}
+	
+.reg{
+	position:absolute;
+	left:10%; top:30%; width:75%; height:45%;
+	background:#E2D7BC;
+	}
+	
+#reg{
+	position:absolute;
+	left:30px; top:15px;
+	}
+
+.field{
+	position:absolute;
+	left:45%;
+	background-color:#CCE;
+	}
+	
+#right{
+	position:absolute; 
+	top:165px; right:11.5%; width:29.5%; height:67%;
+	border-radius:15px 15px 0px 0px;
+	background-color:#CCE;
+	}
+
+footer{
+	position:absolute;
+	left:11.5%; width:77.1%; height:50px; bottom:0%;
+	border-radius:0px 0px 15px 15px;
+	background-color:#E2D7BC;
+	}
+	

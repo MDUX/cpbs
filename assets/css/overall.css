@@ -1,0 +1,73 @@
+/* 
+    Document   : overall
+    Created on : Apr 15, 2014, 10:45:37 AM
+    Author     : Mati2
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+@charset "utf-8";
+html,
+body {
+	margin:0;
+	padding:0;
+	height:100%;
+}
+
+header{
+	position:absolute;
+	top:0%; left:0%; height:160px; width:100%;
+	}
+	
+#menu_bar{
+	position:absolute;
+	bottom:0px; left:11.5%; width:77.1%; height:20%;
+	border-radius:0px 0px 15px 15px;
+	background-color:#E2D7BC;
+	}
+	
+section{
+        position:absolute;
+	left:11.5%; top:165px; width:77%;
+        border-radius:15px 15px 0px 0px;
+        min-height:100%;
+	background:#CCE;
+	}
+	
+#left{
+	position:absolute;
+	left:0.5px; top:0.5px; width:20%;
+        margin: 5px 3px 5px 3px;
+        border-right: 1px solid white;
+        height: 80%;
+	}
+	
+#right{
+	position:absolute; 
+	top:0.5px; right:0.5px; width:75%;
+        margin: 5px 3px 5px 3px;
+	//margin-left: 10%;
+	}
+        #book{
+            position: absolute;
+            left:30px; top:5px; width:35%;
+            padding: 20px 10px 10px 10px;
+            margin: 10px 10px 10px 50px;
+            // background-color: brown;
+                
+        }
+        
+.field{
+	position:absolute;
+	left:15%;
+	background-color:#CCE;
+	}
+	
+        
+//footer{
+	position:absolute;
+	bottom:0%;
+	left:11.5%; width:77%; height:50px;
+	border-radius:0px 0px 15px 15px;
+	background-color:#E2D7BC;
+	}
