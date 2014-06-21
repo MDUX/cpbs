@@ -3,7 +3,7 @@
 	<div class="col-lg-9">
   <div class="breadcrumb">
       <a href="<?php echo site_url('verify_operator/manage');?>" class="btn btn-info btn-xs"><span class=" fa fa-plus-circle"></span> Add slots</a>
-      <a href="<?php echo site_url('verify_operator/manageparking');?>" class="btn btn-info btn-xs"><span class="fa fa-cog"></span> Manage parking</a>
+      <a href="<?php echo site_url('verify_operator/manageparking');?>" class="btn btn-info btn-xs"><span class="fa fa-cog"></span> Manage Slots</a>
       <a href="" class="btn btn-info btn-xs"><span class="fa fa-refresh"></span> View slots available</a>
   </div>
 </div>

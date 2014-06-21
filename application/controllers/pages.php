@@ -16,8 +16,8 @@ class Pages extends CI_Controller{
     function view(){
        $this->form_validation->set_rules('username','Username','trim|required|is_unique[users.username]|xss_clean');
        $this->form_validation->set_rules('email','Email','trim|required|xss_clean|valid_email|is_unique[users.email]');
-       $this->form_validation->set_rules('phonenumber','Phone Number','trim|required|is_unique[users.phonenumber]|xss_clean|numeric');
-       $this->form_validation->set_rules('password','Password','trim|required|matches[password2]|xss_clean');
+       $this->form_validation->set_rules('phonenumber','Phone Number','trim|required|is_unique[users.phonenumber]|exact_length[10]|xss_clean|numeric');
+       $this->form_validation->set_rules('password','Password','trim|required|matches[password2]|min_lentgh[5]|max_length[8]|xss_clean');
        $this->form_validation->set_rules('password2','password2','trim|required|xss_clean');
        if($this->form_validation->run()===FALSE){
            $this->load->view('pages/register_view');

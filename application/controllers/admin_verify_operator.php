@@ -12,7 +12,7 @@ class Admin_verify_operator extends CI_Controller{
         $this->form_validation->set_rules('username','Username','trim|required|is_unique[users.username]|xss_clean');
         $this->form_validation->set_rules('email','email','trim|required|is_unique[users.email]|xss_clean');
         $this->form_validation->set_rules('phonenumber','phonenumber','trim|required|is_unique[users.phonenumber]|alpha_numeric|exact_length[10]|xss_clean');
-        $this->form_validation->set_rules('password','password','trim|required|xss_clean');
+        $this->form_validation->set_rules('password','password','trim|required|min_length[5]|max_length[8]|xss_clean');
         $this->form_validation->set_rules('password2','confirm password','trim|required|matches[password]|xss_clean');
         
         if($this->form_validation->run()===FALSE){

@@ -128,14 +128,16 @@
         $this->load->view('operator/slots_rename',$data);
     }
     function slot_edit($id){
+        $data['data']=$id;
       $this->load->library('form_validation');
         $this->form_validation->set_rules('nsl','Slot name','trim|required|xss_clean');
         $this->form_validation->set_rules('slocation','Location','trim|required|xss_clean');
         $this->form_validation->set_rules('amnt','Amount','trim|required|numeric|min_length[3]|max_length[5]|xss_clean');
         $this->form_validation->set_rules('slotc','Category','trim|required|xss_clean');
+        $this->form_validation->run();
          if(isset($_POST['save'])){
         if($this->form_validation->run()===FALSE){
-            $this->load->view('operator/slots_rename');
+            $this->load->view('operator/slots_rename',$data);
         }  else {
             $this->load->model('operator_model');
             $name=  $this->input->post('nsl');
@@ -144,7 +146,7 @@
             $category=  $this->input->post('slotc');
             $this->operator_model->slotEdit($id,$name,$location,$category,$amount);
             echo'<p class="alert alert-success">Slots updated</p>';
-            $this->load->view('operator/slots_rename');
+            $this->load->view('operator/slots_rename',$data);
          }
          }  
     }

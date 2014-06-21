@@ -1,15 +1,24 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="<?php echo base_url('assets/css/datepicker.css');?>">
+<link rel="stylesheet" href="<?php echo base_url('assets/css/jquery-ui.css');?>">
 <link href= "<?php echo base_url();?>assets/css/index.css" rel="stylesheet">
 <link href= "<?php echo base_url();?>assets/css/bootstrap.min.css" rel="stylesheet">
 <link href= "<?php echo base_url();?>assets/css/bootstrap.css" rel="stylesheet">
 <link href= "<?php echo base_url();?>assets/css/jquery.dataTables.css" rel="stylesheet">
 <link href= "<?php echo base_url();?>assets/font-awesome/css/font-awesome.min.css" rel="stylesheet">
 <script src= "<?php echo base_url();?>assets/js/bootstrap.min.js"></script>
-<script src= "<?php echo base_url();?>assets/js/jquery.dataTables.js"></script>
-<script src= "<?php echo base_url();?>assets/js/jquery.js"></script>
-<script src= "<?php echo base_url();?>assets/js/jquery-1.10.2.min.js"></script>
+<script src= "<?php echo base_url();?>assets/js/jquery-1.10.2.js"></script>
+<script src= "<?php echo base_url();?>assets/js/jquery-2.0.3.min.js"></script>
+<script src= "<?php echo base_url();?>assets/js/bootstrap-tab.js"></script>
+<script src="<?php echo base_url('assets/js/bootstrap-modal.js') ?>"></script>
+<script src="<?php echo base_url('assets/js/datepicker.js') ?>"></script>
+<script src="<?php echo base_url('assets/js/bootstrap-alert.js') ?>"></script>
+<script src="<?php echo base_url('assets/js/bootstrap.js') ?>"></script>
+<script src="<?php echo base_url('assets/js/bootstrap-dropdown.js');?>"></script>
+<script src="<?php echo base_url('assets/js/tabcordion.js');?>"></script>
+<script src="<?php echo base_url('assets/js/bootstrap-popover.js');?>"></script>
 <title>CPBS</title>
 </head>
 <body scrol="no" style="overflow">

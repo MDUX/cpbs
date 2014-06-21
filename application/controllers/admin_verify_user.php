@@ -18,8 +18,8 @@
         $this->load->model('register_form');
         $sn=  $this->session->userdata('username');
         $this->load->library('form_validation');
-        $this->form_validation->set_rules('cpd','Current password','trim|required|xss_clean');
-        $this->form_validation->set_rules('npd','New password','trim|required|xss_clean');
+        $this->form_validation->set_rules('cpd','Current password','trim|min_length[5|max_lenth[8]|required|xss_clean');
+        $this->form_validation->set_rules('npd','New password','trim|min_length[5|max_lenth[8]|required|xss_clean');
         $this->form_validation->set_rules('confpd','Confirm password','trim|required|matches[npd]|xss_clean');
         if($this->form_validation->run()===FALSE){
         $this->load->view('users/change_password');
